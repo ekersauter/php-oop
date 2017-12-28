@@ -44,21 +44,29 @@ function mergeObjects($objA, $objB) {
     }
     return $objA;
 }
+/**
+* Vetrekkende van een iteratie over $mappingArray is er een array_search in $objectsA en in $objectsB.
+* Een var_dump komt vrij bij elke key - value mapping. 
+*/
 function mappedMerge($mappingArray, $objectsA, $objectsB) {
     foreach ($mappingArray as $mapArrays) {
         foreach ($mapArrays as $mapArray) {
-            $mapFirstKeyValue = $mapArray[getFirstKey($mapArray) ];
-            $mapSecondKeyValue = $mapArray[array_keys($mapArray) [1]];
+            $firstMapKeyName = getFirstKey($mapArray);
+            $mapFirstKeyValue = $mapArray[$firstMapKeyName];
+            
             foreach ($objectsA as $objectA) {
                 $key = array_search($mapFirstKeyValue, (array)$objectA);
-                if ($key == getFirstKey($mapArray)) {
+                if ($key == $firstMapKeyName) {
                     $mappedMergedA = $objectA;
                     var_dump((array)$mappedMergedA);
                 }
             }
+            $secondMapKeyName = array_keys($mapArray) [1];
+            $mapSecondKeyValue = $mapArray[$secondMapKeyName];
+            
             foreach ($objectsB as $objectB) {
                 $key = array_search($mapSecondKeyValue, (array)$objectB);
-                if ($key == array_keys($mapArray) [1]) {
+                if ($key == $secondMapKeyName) {
                     $mappedMergedB = $objectB;
                     var_dump(array_slice((array)$mappedMergedB, 0, 4));
                 }
