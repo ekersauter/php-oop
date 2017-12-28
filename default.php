@@ -35,8 +35,8 @@
 		
 		<?php
 
-			include("/methods.php");
-			include("/parser.php");
+			include("methods.php");
+			include("parser.php");
 
 		?>
 		
