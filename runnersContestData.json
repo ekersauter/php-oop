@@ -1,0 +1,26 @@
+{
+  "ContestData": [
+  {
+    "startNumber": 98101,
+    "distance": 15,
+    "startTime": "15:00",
+    "endTime": "16:15"
+  }, {
+    "startNumber": 98102,
+    "distance": 5,
+    "startTime": "13:00",
+    "endTime": "13:26"
+  }, {
+    "startNumber": 98103,
+    "distance": 10,
+    "startTime": "14:30",
+    "endTime": "15:15"
+  }, {
+    "startNumber": 98104,
+    "distance": 12,
+    "startTime": "14:00",
+    "endTime": "15:05"
+  }
+   
+ ]
+}
