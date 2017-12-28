@@ -1,0 +1,31 @@
+{
+  "runnersData": [{
+      "id": 11011,
+      "firstName": "Voornaam1",
+      "lastName": "Achternaam1",
+      "birthDay": 2000,
+      "club": "runclub1"    
+    },
+    {
+      "id": 11012,
+      "firstName": "Voornaam2",
+      "lastName": "Achternaam2",
+      "birthDay": 2002,
+      "club": "runclub2"
+    },
+    {
+      "id": 11013,
+      "firstName": "Voornaam3",
+      "lastName": "Achternaam3",
+      "birthDay": 2003,
+      "club": "runclub3"     
+    },
+    {
+      "id": 11014,
+      "firstName": "Voornaam4",
+      "lastName": "Achternaam4",
+      "birthDay": 2004,
+      "club": "runclub4"     
+    }
+  ]
+}
