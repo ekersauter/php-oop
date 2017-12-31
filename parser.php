@@ -37,9 +37,10 @@ $firstKeyRunnersContestData = getFirstKey($runnersContestData);
 $arrayOfKeysInRunnersContestData = getKeys($runnersContestData);
 foreach ($runnersContestData->$firstKeyRunnersContestData as $row) {
     foreach ($row as $key => $value) {
-        $propertyBuilder2[$key] = $value;
+        $propertyBuild[$key] = $value;
     }
-    $runnersContests[] = new objectsConstructor($propertyBuilder2);
+    $runnersContests[] = new objectsConstructor($propertyBuilder);
+    unset($propertyBuilder);
 }
 echo ('<h2>Aantal ' . $firstKeyRunnersContestData . ': ' . count($runnersContestData->$firstKeyRunnersContestData) . '</h2>');
 /**
